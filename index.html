@@ -1,9 +1,120 @@
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Site Starter</title>
-	</head>
-	<body>
-		<h1>Site Starter</h1>
-		<p>This is the basic page for <a href="https://github.com/pcon/site-starter">site starter</a>.  You want to follow the README.md file to set up the Github actions to push your content to this page.</p>
-	</body>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Prospero &mdash; Data Masker</title>
+        <link rel="stylesheet" href="/css/main.css">
+    </head>
+
+    <body>
+        <nav>
+    <div class="container nav-wrapper">
+        <a href="/" class="brand-logo">Prospero</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#download">Download</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+        <main class="is-fullhd">
+            
+<div id="hero">
+    <div class="container content">
+        <h2>Your data, masked.</h2>
+        <img class="responsive-img z-depth-2" src="/img/app_hero.png" />
+        <a class="waves-effect btn" href="#download" id="hero_download">
+            <i class="material-icons left">cloud_download</i> Download
+        </a>
+    </div>
+</div>
+<div id="copy">
+    <div class="container">
+        <div class="section">
+            In a world where data privacy should be everyone's number one goal
+            it can be difficult to share data without having to worry about
+            accidentally exposing sensitive data. This is where Prospero come to
+            help.
+        </div>
+        <div class="section">
+            With prospero you can apply various masks to your data and share it
+            knowing that your sensitive data is obfuscated how you want it.
+        </div>
+        <div class="section">
+            <h3 id="features">Features</h3>
+            <div class="row" id="features">
+                <div class="col s12 m4 center-align">
+                    <i class="medium material-icons copy-icon">description</i>
+                    <p>
+                        Read large CSV files and output them with masked data.
+                    </p>
+                </div>
+                <div class="col s12 m4 center-align">
+                    <i class="medium material-icons copy-icon">save</i>
+                    <p>
+                        Save your masking settings to make it easy to re-mask
+                        the data in the future.
+                    </p>
+                </div>
+                <div class="col s12 m4 center-align">
+                    <i class="medium material-icons copy-icon">code</i>
+                    <p>
+                        Use your masking settings and our CLI to script out
+                        masking jobs
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h3 id="download">Download</h3>
+            <h4>Prospero UI</h4>
+            <p>
+                Download the UI front-end for Prospero written in
+                <a href="https://www.electronjs.org/">Electron</a> and available
+                for all platforms
+            </p>
+            <div class="center-align">
+                <a class="waves-effect btn" href="#" id="hero_download">
+                    <i class="material-icons left">cloud_download</i> Windows
+                </a>
+                <a class="waves-effect btn" href="#" id="hero_download">
+                    <i class="material-icons left">cloud_download</i> OSX
+                </a>
+                <a class="waves-effect btn" href="#" id="hero_download">
+                    <i class="material-icons left">cloud_download</i> Linux
+                </a>
+            </div>
+            <h4>Prospero CLI</h4>
+            <p>
+                Install the prospero CLI via NPM by running
+                <code>npm -g install prospero-cli</code>
+            </p>
+            <h4>Prospero Node Module</h4>
+            <p>
+                Install the prospero Node module by using NPM with
+                <code>npm install prospero --save</code>. For more information
+                on how to use the <code>prospero</code> module, visit the
+                <a href="https://github.com/prosperodatamask/prosperoutils"
+                    >module documentation</a
+                >.
+            </p>
+        </div>
+    </div>
+</div>
+
+        </main>
+        <footer class="page-footer">
+    <div class="container">
+        <a
+            class="right"
+            href="https://github.com/prosperodatamask"
+            title="GitHub"
+        >
+            <span class="material-icons">code</span>
+        </a>
+    </div>
+</footer>
+ <script src="/js/main.js"></script>
+    </body>
 </html>
