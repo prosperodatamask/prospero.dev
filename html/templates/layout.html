@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Prospero &mdash; Data Masker</title>
+        {% include "styles.html" %}
+    </head>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Site Title</title>
-    {% include "styles.html" %}
-</head>
-
-<body>
-    <div id="site_wrapper" class="container is-fullhd">
-        {% block content %} {% endblock %}
-        {% include "scripts.html" %}
-    </div>
-</body>
-
+    <body>
+        {% include "nav.html" %}
+        <main class="is-fullhd">
+            {% block content %} {% endblock %}
+        </main>
+        {% include "footer.html" %} {% include "scripts.html" %}
+    </body>
 </html>

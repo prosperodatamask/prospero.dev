@@ -3,9 +3,11 @@ const gulp = require('gulp');
 
 const clean = require('./gulp/clean');
 const css = require('./gulp/css').default;
+const fonts = require('./gulp/fonts').default;
 const html = require('./gulp/html').default;
 const img = require('./gulp/img').default;
 const js = require('./gulp/js').default;
+const pub = require('./gulp/public').default;
 const sass = require('./gulp/sass').default;
 const sitemap = require('./gulp/sitemap');
 const static_files = require('./gulp/static');
@@ -13,9 +15,11 @@ const watch = require('./gulp/watch');
 
 const parallel_jobs = [
     css,
+    fonts,
     html,
     img,
     js,
+    pub,
     sass
 ];
 

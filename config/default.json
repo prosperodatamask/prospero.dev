@@ -5,7 +5,7 @@
         "livereload": true
     },
     "site": {
-        "url": "https://domainname.com",
+        "url": "https://prospero.dev",
         "sitemap": true
     },
     "build": {
@@ -15,6 +15,7 @@
         "js": "js",
         "pages": "pages",
         "root": "dist",
+        "public": "public",
         "sass": "sass",
         "templates": "templates"
     },

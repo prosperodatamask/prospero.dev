@@ -1,3 +1,42 @@
 @charset "utf-8";
 
-// @import "../node_modules/path/to/file.sass"
+@import "colors";
+@import "../node_modules/materialize-css/sass/materialize.scss";
+@import "../node_modules/material-icons/iconfont/material-icons.scss";
+
+body {
+    background-color: $primary-secondary;
+    display: flex;
+    min-height: 100vh; /* stylelint-disable unit-whitelist */
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+nav, .page-footer {
+    background-color: $secondary-main;
+}
+
+footer a {
+    color: #fff;
+}
+
+$hero-padding: 2.8rem;
+
+#hero {
+    padding-top: $hero-padding;
+    padding-bottom: $hero-padding;
+    background-color: $primary-main;
+    height: 100%;
+}
+
+#hero_download {
+    margin-top: 1rem;
+    background-color: $secondary-main;
+}
+
+.copy-icon {
+    color: $primary-main;
+}
