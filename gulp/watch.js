@@ -6,6 +6,7 @@ const css = require('./css');
 const html = require('./html');
 const img = require('./img');
 const js = require('./js');
+const pub = require('./public');
 const sass = require('./sass');
 
 /**
@@ -17,6 +18,7 @@ function watch() {
     html.watch();
     img.watch();
     js.watch();
+    pub.watch();
     sass.watch();
 
     const server_config = {

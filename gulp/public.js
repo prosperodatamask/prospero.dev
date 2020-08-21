@@ -4,12 +4,24 @@ const path = require('path');
 
 const constants = require('./constants');
 
+const IGNORED_FILES = [
+    'README.md'
+];
+
 /**
  * Gets the path to the image files
  * @returns {String} The image file path
  */
 function public_path() {
-    return path.join(__dirname, '..', constants.PUB, '**/*');
+    const paths = [
+        path.join(__dirname, '..', constants.PUB, '**/*')
+    ];
+
+    IGNORED_FILES.forEach(function (value) {
+        paths.push(`!${path.join(__dirname, '..', constants.PUB, value)}`);
+    });
+
+    return paths;
 }
 
 /**
